@@ -1,0 +1,9 @@
+#!/bin/bash
+
+export BMP_PORT
+export PORT_RANGE
+
+echo "BMP port is $BMP_PORT"
+echo "Port Range is $PORT_RANGE"
+
+/browsermob-proxy/bin/browsermob-proxy -port $BMP_PORT -proxyPortRange $PORT_RANGE
