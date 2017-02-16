@@ -2,12 +2,10 @@ TAG := 1.0
 IMAGE := lucacri/browsermob
 
 build:
-	@docker build -t ${IMAGE}:${TAG} .
+	@echo "NOPE, this is managed on github automatically. Just push it"
 
 push:
-	@docker push ${IMAGE}:${TAG}
-	@docker tag ${IMAGE}:${TAG} ${IMAGE}:latest
-	@docker push ${IMAGE}:latest
+	@echo "NOPE, this is managed on github automatically. Just push it"
 
 
 test:
