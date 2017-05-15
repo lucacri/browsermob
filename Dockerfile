@@ -1,4 +1,4 @@
-FROM phusion/baseimage
+FROM phusion/baseimage:0.9.19
 
 # BMP install
 ENV BMP_VERSION 2.1.4
@@ -13,7 +13,6 @@ RUN apt-get update -qqy \
     wget \
   	&& rm -rf /var/lib/apt/lists/* \
   	&& sed -i 's/securerandom\.source=file:\/dev\/random/securerandom\.source=file:\/dev\/urandom/' ./usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/java.security \
-	&& apt-get autoremove -y \
 	&& apt-get clean \
 	&& apt-get autoclean \
 	&& echo -n > /var/lib/apt/extended_states \
