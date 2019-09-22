@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.19
+FROM phusion/baseimage:0.10.2
 
 # BMP install
 ENV BMP_VERSION 2.1.4
